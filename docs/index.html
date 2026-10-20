@@ -8,21 +8,48 @@
 <meta property="og:title" content="李振文 · 品牌与运营工作站">
 <meta property="og:description" content="把产品、渠道和团队，连接成可持续的增长。">
 <title>李振文 · 品牌与运营工作站</title>
+<style>
+html.intro-active{overflow:hidden}html.intro-active .site-header,html.intro-active #main,html.intro-active .site-footer,html.intro-active .skip-link{visibility:hidden}
+#entry-intro{position:fixed;inset:0;z-index:500;background:#f3f6fc;color:#152d45}html[data-theme="dark"] #entry-intro{background:#0d1726;color:#e8f0fc}
+html:not(.intro-active):not(.intro-leaving) #entry-intro{display:none}
+</style>
+<script>
+ document.documentElement.classList.add('intro-active');
+ try{document.documentElement.dataset.theme=localStorage.getItem('zw-theme')||'light'}catch{}
+ window.__entrySafety=setTimeout(function(){
+  document.documentElement.classList.remove('intro-active','intro-leaving');
+  var panel=document.getElementById('entry-intro');if(panel)panel.hidden=true;
+  document.querySelectorAll('.skip-link,.site-header,#main,.site-footer').forEach(function(el){el.inert=false});
+ },5000);
+</script>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/manrope.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="entry.css?v=1">
 <link rel="stylesheet" href="vendor/photoswipe.css">
 <script defer src="profile.js"></script>
-<script defer src="app.js"></script>
+<script defer src="entry.js?v=1"></script>
+<script defer src="app.js?v=20261020-entry"></script>
 <script type="module" src="gallery.js"></script>
 </head>
 <body>
+<section id="entry-intro" class="entry-intro" role="dialog" aria-modal="true" aria-labelledby="entry-word" aria-describedby="entry-instructions">
+ <div class="entry-sheet entry-sheet-blue" aria-hidden="true"></div><div class="entry-sheet entry-sheet-mint" aria-hidden="true"></div>
+ <div class="entry-front">
+  <div class="entry-aura entry-aura-one" aria-hidden="true"></div><div class="entry-aura entry-aura-two" aria-hidden="true"></div>
+  <header class="entry-top"><span class="entry-mark">ZW<i></i></span><span>李振文 · 个人工作站</span><span class="entry-edition">EXPERIENCE INTO IMPACT</span></header>
+  <div class="entry-orbit" aria-hidden="true"><span class="entry-orbit-dot"></span></div>
+  <div class="entry-satellites" aria-hidden="true"><span>产研销一体</span><span>团队管理</span><span>SaaS 升级</span><span>公域转私域</span></div>
+  <div class="entry-center"><span class="entry-kicker">A FEW WORDS ABOUT MY JOURNEY</span><div class="entry-word-mask"><h1 id="entry-word">品牌构建</h1></div><p id="entry-context">法国嘉兰 · 年收入从 0 到 1,000 万元</p><div class="entry-capabilities"><span>品牌构建</span><span>全国运营</span><span>渠道协同</span><span>逆势增长</span></div></div>
+  <footer class="entry-bottom"><div class="entry-sequence"><span id="entry-chapter">01 / 05</span><div class="entry-track" aria-hidden="true"><i></i></div></div><p id="entry-instructions"><span id="entry-seconds" aria-hidden="true">4</span><span aria-hidden="true"> 秒后进入 · </span><span>点击任意位置立即进入</span></p><button id="entry-skip" type="button">立即进入 <span aria-hidden="true">↗</span></button></footer>
+ </div>
+</section>
 <a class="skip-link" href="#main">跳转到正文</a>
 <div class="atmosphere" aria-hidden="true"><div class="mesh mesh-a"></div><div class="mesh mesh-b"></div><div class="mesh mesh-c"></div><div class="pointer-aura"></div><div class="fine-grid"></div></div>
 <header class="site-header" id="site-header">
  <a class="wordmark" href="#/home" aria-label="李振文 首页"><span class="monogram">ZW<span></span></span><span class="brand-name">李振文<span>PERSONAL WORKSPACE</span></span></a>
  <nav class="navigation glass" aria-label="主导航"><a href="#/home" data-nav="home">概览</a><a href="#/experience" data-nav="experience">工作履历</a><a href="#/skills" data-nav="skills">技能站</a><a href="#/contact" data-nav="contact">联系我 <span aria-hidden="true">↗</span></a></nav>
- <div class="header-tools"><button class="icon-button" id="motion-toggle" aria-label="暂停动态效果" title="暂停动态效果" aria-pressed="false">Ⅱ</button><button class="icon-button" id="theme-toggle" aria-label="切换为深色外观" title="切换外观">◐</button></div>
+ <div class="header-tools"><button class="icon-button" id="entry-replay" aria-label="重播入场动效" title="重播入场动效">↺</button><button class="icon-button" id="motion-toggle" aria-label="暂停动态效果" title="暂停动态效果" aria-pressed="false">Ⅱ</button><button class="icon-button" id="theme-toggle" aria-label="切换为深色外观" title="切换外观">◐</button></div>
 </header>
 <main id="main" tabindex="-1"></main>
 <footer class="site-footer" id="site-footer"><a class="footer-sign" href="#/home">LI ZHENWEN <span>李振文</span></a><p>品牌有方向，运营有章法。</p><a href="mailto:lijiunao@gmail.com">lijiunao@gmail.com <span aria-hidden="true">↗</span></a><span class="footer-status"><i></i>深圳 · 期待下一段合作</span></footer>

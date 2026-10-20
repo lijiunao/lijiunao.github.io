@@ -8,3 +8,6 @@
 发布目标：GitHub Pages。纯静态 HTML/CSS/JS，使用 hash 路由避免静态服务器深链接 404，所有资源随网站发布，无需第三方 API 或构建。
 
 参考 Skill：https://github.com/ngocanhnckh/liquid-glass-frontend-skill ，MIT；Skill 只在本地阅读，不运行其中代码。Manrope 字体遵循随附 OFL。页面及交互为此次制作。
+
+
+入场更新：以品牌构建、全国运营、渠道协同和逆势增长概括实际履历，再收束到姓名。独立全屏入场层先于页面显示，3.9秒等待加约0.72秒分层揭幕；点击采用约0.42秒快速揭幕。词语使用原生Web Animations API，遮罩与分层退出参考Codrops的BlockRevealers和PageRevealEffects，无新增运行依赖。
